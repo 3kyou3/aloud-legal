@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aloud — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 36px 20px 96px; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 1.95rem; line-height: 1.2; margin: 0 0 .25em; }
+  h2 { font-size: 1.2rem; margin: 2em 0 .4em; }
+  p, li { margin: .55em 0; }
+  ul { padding-left: 1.25em; }
+  code { background: #f1f1f3; padding: .1em .35em; border-radius: 4px; font-size: .88em; }
+  a { color: #c0563c; }
+  strong { font-weight: 600; }
+  @media (prefers-color-scheme: dark) { body { color:#e6e6e6; background:#111; } code { background:#2a2a2c; } a { color:#ff9a7a; } }
+</style>
+</head><body>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated: 2026-06-27</strong></p>
+<p>Aloud ("we", "us") is a spoken-English practice app for iPhone. This Privacy Policy explains what we collect, why, who else handles it on our behalf, and how you can delete it.</p>
+<p>If you only read one thing: your voice and transcripts are processed to give you real-time conversation practice; we never sell your data; you can delete your account and all of its data from inside the app at any time.</p>
+<h2>1. Who we are</h2>
+<p>Aloud is built and operated by an independent developer (3kyou3). For any privacy question or data-rights request, contact <strong><a href="mailto:2604256025@qq.com">2604256025@qq.com</a></strong>.</p>
+<h2>2. The information we collect</h2>
+<p><strong>Account information.</strong> When you sign in with Apple, we receive a Supabase user ID, and — only on the very first sign-in for this Apple ID — the name you choose to share via Apple. We never receive your Apple ID password. Apple may share an obfuscated relay email; we do not currently store that email.</p>
+<p><strong>Profile data you provide.</strong> Your display name, gender (or "unspecified"), daily learning goal, learning interests, CEFR level estimate, and the native language you selected for the app's interface ("L1"). All of this is editable inside the app.</p>
+<p><strong>Voice and transcripts.</strong> During a Speak session, your microphone audio is streamed in real time to our speech-to-text provider to produce a written transcript. Your transcripts (and the AI assistant's replies) are used to compose the next reply, and summarized into a short profile of your interests and recurring topics. Long-form audio is <strong>not</strong> retained on our servers; only the resulting text is stored.</p>
+<p><strong>Vocabulary.</strong> Words you save while tapping a caption, their pronunciation, part of speech, and definition in your selected L1, plus your "learned" progress.</p>
+<p><strong>Practice statistics.</strong> Total minutes practiced, current streak, per-day minute log (for the monthly progress report), and longest single session per month.</p>
+<p><strong>Subscription state.</strong> Whether you are an Aloud Pro subscriber, your renewal/expiry dates, and a transaction identifier. Apple processes the actual payment; we never receive your card details.</p>
+<p><strong>Local notifications.</strong> The days and times you choose for daily reminders, stored on your device and on our servers so they can sync across your devices.</p>
+<p><strong>Feedback.</strong> If you submit feedback inside the app, we store the message text, your account ID, your app version, your iOS version, and your device model so we can reproduce issues.</p>
+<p><strong>Diagnostic data.</strong> Standard crash logs are provided to Apple only if you opt in via iOS Settings. We do not run our own analytics SDK, advertising SDK, or fingerprinting service.</p>
+<h2>3. Who processes your data on our behalf</h2>
+<p>Aloud uses the following third-party processors. Each one receives only the minimum needed to perform its function.</p>
+<ul>
+<li><strong>Supabase, Inc.</strong> (United States) — account authentication, profile / vocabulary / memory / session storage, scheduled functions. This is the primary backend.</li>
+<li><strong>Apple Inc.</strong> — Sign in with Apple, StoreKit subscription processing, push and local notifications.</li>
+<li><strong>Deepgram, Inc.</strong> (United States) — real-time speech-to-text on your voice while you are in a Speak session.</li>
+<li><strong>Google LLC</strong> (United States) — the AI chat model (Gemini) that generates Koi's replies and judges. Called via our Supabase edge function so the API key never leaves the server.</li>
+<li><strong>Alibaba Cloud / DashScope</strong> (Beijing, China) — text embeddings for the long-term memory (RAG) feature, and, only as a fallback, speech-to-text and text-to-speech.</li>
+<li><strong>MiniMax</strong> (Shanghai, China) — text-to-speech, <strong>only if</strong> you switch the TTS provider to "MiniMax" in settings. The default voice runs entirely on your device.</li>
+<li><strong>FluidAudio Supertonic-3</strong> — runs <strong>on your device</strong>; nothing is uploaded.</li>
+</ul>
+<p>We do not use advertising networks. We do not sell or rent your data to anyone.</p>
+<h2>4. Why we process this data</h2>
+<ul>
+<li>To run the conversation in real time (voice → text → AI reply → speech).</li>
+<li>To remember what you have said before, so Koi feels continuous from session to session.</li>
+<li>To show your progress (streak, minutes, vocabulary, level).</li>
+<li>To deliver the reminders you scheduled.</li>
+<li>To process your subscription and confirm Pro entitlement.</li>
+<li>To respond to your feedback.</li>
+<li>To detect fraud and abuse, and to meet legal obligations.</li>
+</ul>
+<p>We rely on your <strong>consent</strong> (when you sign in and start a Speak session you knowingly send voice data to our processors), on the <strong>performance of the contract</strong> between us, and on our <strong>legitimate interests</strong> in keeping the app secure and improving it.</p>
+<h2>5. How long we keep it</h2>
+<ul>
+<li>Profile, vocabulary, and learned memory remain until you delete them.</li>
+<li>Daily-minute logs are pruned automatically after roughly 16 weeks.</li>
+<li>Feedback messages are kept for as long as we need them to act on or audit.</li>
+<li>After you delete your account, all server records are erased within 30 days (Supabase <code>auth.users</code> cascades to the data tables). Your subscription continues at Apple until the end of the current paid period.</li>
+</ul>
+<h2>6. Your rights</h2>
+<p>You can, at any time and from inside the app:</p>
+<ul>
+<li><strong>Forget what Koi learned about you</strong> — Me → 隐私与数据 → "Delete what Koi learned about you" clears the auto-summary, RAG facts, and pending un-folded conversations. Your saved vocabulary, profile, and reminders are kept.</li>
+<li><strong>Delete your account</strong> — Me → 隐私与数据 → "Delete account" removes the Supabase account and all server data. Your subscription must be cancelled separately via Apple (we steer you to <em>Manage Subscriptions</em> before deleting if you have one).</li>
+<li><strong>Edit your profile</strong> — Me → 个人资料.</li>
+<li><strong>Change your native language</strong> — Me → 母语.</li>
+</ul>
+<p>You also have the right to ask us for a copy of your data, to ask us to correct it, to object to or restrict processing, and (where local law grants this right) to lodge a complaint with your data-protection authority. Email <strong><a href="mailto:2604256025@qq.com">2604256025@qq.com</a></strong>.</p>
+<h2>7. Children</h2>
+<p>Aloud is not directed to children under 13 (or under 16 where local law sets a higher floor). Do not use Aloud if you are below that age. If you believe a child has created an account, email us and we will delete it.</p>
+<h2>8. International transfers</h2>
+<p>Our backend is hosted in the United States. Embeddings (and, only as a fallback, speech-to-text and text-to-speech) are processed in mainland China by Alibaba Cloud. By using Aloud you understand that your data may be processed in jurisdictions other than your own. We rely on the providers' published security and contractual safeguards.</p>
+<h2>9. Security</h2>
+<p>Data in transit is encrypted with TLS. Row-level security limits database access to your own rows. No system is perfectly secure; if you discover a vulnerability, please report it to <strong><a href="mailto:2604256025@qq.com">2604256025@qq.com</a></strong>.</p>
+<h2>10. Changes</h2>
+<p>We will update the "Last updated" date at the top of this policy when it changes. Material changes will be surfaced inside the app before they take effect.</p>
+<h2>11. Contact</h2>
+<p><strong><a href="mailto:2604256025@qq.com">2604256025@qq.com</a></strong></p>
+</body></html>
