@@ -39,8 +39,8 @@
 <li><strong>Supabase, Inc.</strong> (United States) — account authentication, profile / vocabulary / memory / session storage, scheduled functions. This is the primary backend.</li>
 <li><strong>Apple Inc.</strong> — Sign in with Apple, StoreKit subscription processing, push and local notifications.</li>
 <li><strong>Deepgram, Inc.</strong> (United States) — real-time speech-to-text on your voice while you are in a Speak session.</li>
-<li><strong>Google LLC</strong> (United States) — the AI chat model (Gemini) that generates Koi's replies and judges. Called via our Supabase edge function so the API key never leaves the server.</li>
-<li><strong>Alibaba Cloud / DashScope</strong> (Beijing, China) — text embeddings for the long-term memory (RAG) feature, and, only as a fallback, speech-to-text and text-to-speech.</li>
+<li><strong>Google LLC</strong> (United States) — the AI chat model (Gemini) that generates Koi's replies and judges, and the text embeddings that power the long-term memory (RAG) feature. Both are called via our Supabase edge function so the API key never leaves the server.</li>
+<li><strong>Alibaba Cloud / DashScope</strong> (Beijing, China) — <strong>only as a fallback</strong>, speech-to-text and text-to-speech, used only when the primary providers are unavailable.</li>
 <li><strong>MiniMax</strong> (Shanghai, China) — text-to-speech, <strong>only if</strong> you switch the TTS provider to "MiniMax" in settings. The default voice runs entirely on your device.</li>
 <li><strong>FluidAudio Supertonic-3</strong> — runs <strong>on your device</strong>; nothing is uploaded.</li>
 </ul>
@@ -75,7 +75,7 @@
 <h2>7. Children</h2>
 <p>Aloud is not directed to children under 13 (or under 16 where local law sets a higher floor). Do not use Aloud if you are below that age. If you believe a child has created an account, email us and we will delete it.</p>
 <h2>8. International transfers</h2>
-<p>Our backend is hosted in the United States. Embeddings (and, only as a fallback, speech-to-text and text-to-speech) are processed in mainland China by Alibaba Cloud. By using Aloud you understand that your data may be processed in jurisdictions other than your own. We rely on the providers' published security and contractual safeguards.</p>
+<p>Our backend is hosted in the United States, and the text embeddings for the memory feature are processed by Google in the United States. Only as a fallback — if the primary speech providers are unavailable — speech-to-text and text-to-speech may be processed in mainland China by Alibaba Cloud (and by MiniMax, only if you enable it). By using Aloud you understand that your data may be processed in jurisdictions other than your own. We rely on the providers' published security and contractual safeguards.</p>
 <h2>9. Security</h2>
 <p>Data in transit is encrypted with TLS. Row-level security limits database access to your own rows. No system is perfectly secure; if you discover a vulnerability, please report it to <strong><a href="mailto:2604256025@qq.com">2604256025@qq.com</a></strong>.</p>
 <h2>10. Changes</h2>
