@@ -18,7 +18,7 @@
 </style>
 </head><body>
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: 2026-06-27</strong></p>
+<p><strong>Last updated: 2026-07-03</strong></p>
 <p>Aloud ("we", "us") is a spoken-English practice app for iPhone. This Privacy Policy explains what we collect, why, who else handles it on our behalf, and how you can delete it.</p>
 <p>If you only read one thing: your voice and transcripts are processed to give you real-time conversation practice; we never sell your data; you can delete your account and all of its data from inside the app at any time.</p>
 <h2>1. Who we are</h2>
@@ -26,7 +26,7 @@
 <h2>2. The information we collect</h2>
 <p><strong>Account information.</strong> When you sign in with Apple, we receive a Supabase user ID, and — only on the very first sign-in for this Apple ID — the name you choose to share via Apple. We never receive your Apple ID password. Apple may share an obfuscated relay email; we do not currently store that email.</p>
 <p><strong>Profile data you provide.</strong> Your display name, gender (or "unspecified"), daily learning goal, learning interests, CEFR level estimate, and the native language you selected for the app's interface ("L1"). All of this is editable inside the app.</p>
-<p><strong>Voice and transcripts.</strong> During a Speak session, your microphone audio is streamed in real time to our speech-to-text provider to produce a written transcript. Your transcripts (and the AI assistant's replies) are used to compose the next reply, and summarized into a short profile of your interests and recurring topics. Long-form audio is <strong>not</strong> retained on our servers; only the resulting text is stored.</p>
+<p><strong>Voice and transcripts.</strong> During a Speak session, your microphone audio is streamed in real time to our speech-to-text provider — <strong>Deepgram, an AI speech service in the United States</strong> — to produce a written transcript. Your transcript, together with your profile (name, native language, level, interests, goal) and the facts Koi has remembered about you, is then sent to <strong>Google's Gemini AI (United States)</strong> to generate Koi's reply, and is summarized into a short profile of your interests and recurring topics. Long-form audio is <strong>not</strong> retained on our servers; only the resulting text is stored.</p>
 <p><strong>Vocabulary.</strong> Words you save while tapping a caption, their pronunciation, part of speech, and definition in your selected L1, plus your "learned" progress.</p>
 <p><strong>Practice statistics.</strong> Total minutes practiced, current streak, per-day minute log (for the monthly progress report), and longest single session per month.</p>
 <p><strong>Subscription state.</strong> Whether you are an Aloud Pro subscriber, your renewal/expiry dates, and a transaction identifier. Apple processes the actual payment; we never receive your card details.</p>
@@ -38,10 +38,10 @@
 <ul>
 <li><strong>Supabase, Inc.</strong> (United States) — account authentication, profile / vocabulary / memory / session storage, scheduled functions. This is the primary backend.</li>
 <li><strong>Apple Inc.</strong> — Sign in with Apple, StoreKit subscription processing, push and local notifications.</li>
-<li><strong>Deepgram, Inc.</strong> (United States) — real-time speech-to-text on your voice while you are in a Speak session.</li>
+<li><strong>Deepgram, Inc.</strong> (United States) — an AI speech-to-text service that transcribes your voice, in real time, while you are in a Speak session.</li>
 <li><strong>Google LLC</strong> (United States) — the AI chat model (Gemini) that generates Koi's replies and judges, and the text embeddings that power the long-term memory (RAG) feature. Both are called via our Supabase edge function so the API key never leaves the server.</li>
-<li><strong>Alibaba Cloud / DashScope</strong> (Beijing, China) — <strong>only as a fallback</strong>, speech-to-text and text-to-speech, used only when the primary providers are unavailable.</li>
-<li><strong>MiniMax</strong> (Shanghai, China) — text-to-speech, <strong>only if</strong> you switch the TTS provider to "MiniMax" in settings. The default voice runs entirely on your device.</li>
+<li><strong>Alibaba Cloud / DashScope</strong> (Beijing, China) — <strong>only as a fallback</strong>, AI speech-to-text and text-to-speech, used only when the primary providers are unavailable.</li>
+<li><strong>MiniMax</strong> (Shanghai, China) — AI text-to-speech, <strong>only if</strong> you switch the TTS provider to "MiniMax" in settings. The default voice runs entirely on your device.</li>
 <li><strong>FluidAudio Supertonic-3</strong> — runs <strong>on your device</strong>; nothing is uploaded.</li>
 </ul>
 <p>We do not use advertising networks. We do not sell or rent your data to anyone.</p>
